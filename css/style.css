@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --bg-base: #0a0a14;
+  --bg-surface: #111125;
+  --primary: #db2777;
+  --primary-light: #ec4899;
+  --text-primary: #f1f1f8;
+  --text-secondary: #a0a0c0;
+  --border: rgba(255,255,255,0.08);
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --transition: 0.22s cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
