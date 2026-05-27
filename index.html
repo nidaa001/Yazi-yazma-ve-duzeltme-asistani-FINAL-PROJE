@@ -8,7 +8,51 @@
 </head>
 <body>
   <div id="app">
-    <!-- sayfalar buraya eklenecek -->
+    <!-- GÝRÝÞ SAYFASI -->
+<div id="page-login" class="page">
+  <div class="auth-card">
+    <h1 class="auth-logo">?? Yazý Asistaný</h1>
+    <p class="auth-tagline">Yapay zeka ile profesyonel belgeler yaz.</p>
+    <form onsubmit="App.doLogin(event)">
+      <div class="form-group">
+        <label>E-posta</label>
+        <input type="email" id="login-email" placeholder="ornek@mail.com" required />
+      </div>
+      <div class="form-group">
+        <label>Þifre</label>
+        <input type="password" id="login-password" placeholder="••••••••" required />
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">Giriþ Yap</button>
+    </form>
+    <p class="auth-switch">Hesabýn yok mu? <a onclick="App.navigate('register')">Kayýt Ol</a></p>
+  </div>
+</div>
+
+<!-- KAYIT SAYFASI -->
+<div id="page-register" class="page">
+  <div class="auth-card">
+    <h1 class="auth-logo">?? Yazý Asistaný</h1>
+    <p class="auth-tagline">Hesap oluþtur, yazmaya baþla.</p>
+    <form onsubmit="App.doRegister(event)">
+      <div class="form-group">
+        <label>Ad Soyad</label>
+        <input type="text" id="reg-name" placeholder="Adýn Soyadýn" required />
+      </div>
+      <div class="form-group">
+        <label>E-posta</label>
+        <input type="email" id="reg-email" placeholder="ornek@mail.com" required />
+      </div>
+      <div class="form-group">
+        <label>Þifre</label>
+        <input type="password" id="reg-password" placeholder="En az 6 karakter" required />
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">Kayýt Ol</button>
+    </form>
+    <p class="auth-switch">Zaten hesabýn var mý? <a onclick="App.navigate('login')">Giriþ Yap</a></p>
+  </div>
+  </div>
   </div>
 </body>
 </html> @
+
+
