@@ -58,3 +58,49 @@ body {
 
 .auth-switch { text-align: center; margin-top: 1.2rem; color: var(--text-secondary); font-size: 0.9rem; }
 .auth-switch a { color: var(--primary); cursor: pointer; }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.nav-links a:hover { color: var(--primary); }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .nav-links { display: none; flex-direction: column; }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: block; }
+}

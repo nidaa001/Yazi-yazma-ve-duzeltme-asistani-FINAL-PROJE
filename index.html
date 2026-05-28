@@ -7,6 +7,17 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-brand" onclick="App.navigate('dashboard')">?? Yazý Asistaný</div>
+  <div class="nav-links" id="nav-links">
+    <a onclick="App.navigate('dashboard')">?? Ana Sayfa</a>
+    <a onclick="App.navigate('archive')">?? Yazýlarým</a>
+    <a onclick="App.navigate('settings')">?? Ayarlar</a>
+    <a onclick="App.doLogout()">?? Çýkýþ Yap</a>
+  </div>
+  <button class="nav-toggle" id="nav-toggle" onclick="App.toggleMenu()">?</button>
+</nav>
   <div id="app">
     <!-- GÝRÝÞ SAYFASI -->
 <div id="page-login" class="page">
