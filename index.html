@@ -81,5 +81,31 @@
     <p class="auth-switch"><a onclick="App.navigate('login')">‹ Geri dön</a></p>
   </div>
 </div>
+<!-- ANA SAYFA -->
+<div id="page-dashboard" class="page">
+  <div class="dashboard-container">
+    <div class="dashboard-header">
+      <h1>?? Hoþ geldin, <span id="user-name">Kullanýcý</span>!</h1>
+      <p>Bugün ne yazmak istiyorsun?</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">??</div>
+        <div class="stat-value" id="stat-total">0</div>
+        <div class="stat-label">Toplam Yazý</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">?</div>
+        <div class="stat-value" id="stat-done">0</div>
+        <div class="stat-label">Tamamlanan</div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary" onclick="App.navigate('category')">
+      ? Yeni Yazý Baþlat
+    </button>
+  </div>
+</div>
 
 
