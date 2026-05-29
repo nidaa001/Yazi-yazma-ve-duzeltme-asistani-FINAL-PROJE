@@ -141,5 +141,32 @@
     </div>
   </div>
 </div>
+<!-- EDÝTÖR -->
+<div id="page-editor" class="page">
+  <div class="editor-container">
+    <div class="editor-header">
+      <h2 id="editor-category-title">Belge Yaz</h2>
+      <div class="editor-meta">
+        <span id="word-count">0 kelime</span>
+        <span id="char-count">0 karakter</span>
+      </div>
+    </div>
 
+    <textarea
+      id="editor-textarea"
+      class="editor-area"
+      placeholder="Buraya yazmaya baþla..."
+      oninput="App.updateCounts()"
+    ></textarea>
+
+    <div class="editor-actions">
+      <button class="btn btn-outline" onclick="App.navigate('category')">
+        ‹ Geri
+      </button>
+      <button class="btn btn-primary" id="btn-complete" onclick="App.completeWriting()">
+        ? Tamamlandý
+      </button>
+    </div>
+  </div>
+</div>
 
