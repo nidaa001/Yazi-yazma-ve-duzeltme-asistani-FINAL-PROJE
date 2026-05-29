@@ -220,3 +220,29 @@ body {
   transition: border-color var(--transition);
 }
 .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+/* Aşama Sayfaları */
+.stage-container {
+  max-width: 800px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.stage-title { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.4rem; }
+.stage-desc { color: var(--text-secondary); margin-bottom: 1.5rem; }
+
+.result-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.8rem;
+  min-height: 280px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  font-size: 0.97rem;
+}
+
+.stage-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
