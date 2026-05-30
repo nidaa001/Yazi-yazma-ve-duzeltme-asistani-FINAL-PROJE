@@ -214,4 +214,46 @@
     <div id="archive-list" class="archive-list"></div>
   </div>
 </div>
+<!-- AYARLAR -->
+<div id="page-settings" class="page">
+  <div class="settings-container">
+    <h1 class="page-title">?? Ayarlar</h1>
+
+    <!-- API Anahtarý -->
+    <div class="settings-card">
+      <h3>?? Gemini API Anahtarý</h3>
+      <p class="settings-desc">Google AI Studio'dan aldýðýn anahtarý buraya gir.</p>
+      <div class="settings-row">
+        <input type="password" id="settings-api-key" placeholder="AIzaSy..." />
+        <button class="btn btn-outline" id="btn-test-api" onclick="App.testApiKey()">Test Et</button>
+        <button class="btn btn-primary" onclick="App.saveApiKey()">Kaydet</button>
+      </div>
+      <span id="api-key-success" class="success-msg"></span>
+    </div>
+
+    <!-- Dil Seçimi -->
+    <div class="settings-card">
+      <h3>?? Dil Seçimi</h3>
+      <div class="lang-buttons">
+        <button id="lang-tr" class="btn btn-outline active" onclick="App.setLang('tr')">???? Türkçe</button>
+        <button id="lang-en" class="btn btn-outline" onclick="App.setLang('en')">???? English</button>
+      </div>
+    </div>
+
+    <!-- Profil -->
+    <div class="settings-card">
+      <h3>?? Profil Bilgileri</h3>
+      <div class="form-group">
+        <label>Ad Soyad</label>
+        <input type="text" id="settings-name" />
+      </div>
+      <div class="form-group">
+        <label>E-posta</label>
+        <input type="email" id="settings-email" />
+      </div>
+      <button class="btn btn-primary" onclick="App.saveProfile()">Kaydet</button>
+      <span id="profile-success" class="success-msg"></span>
+    </div>
+  </div>
+</div>
 

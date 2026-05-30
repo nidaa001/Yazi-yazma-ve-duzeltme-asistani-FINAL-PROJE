@@ -301,3 +301,51 @@ body {
   gap: 1.2rem;
 }
 .empty-state.visible { display: flex; }
+/* Ayarlar */
+.settings-container {
+  max-width: 700px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.settings-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.settings-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.4rem; }
+.settings-desc { color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem; }
+
+.settings-row {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.settings-row input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  min-width: 180px;
+}
+
+.lang-buttons { display: flex; gap: 0.8rem; margin-top: 0.8rem; }
+.lang-buttons .active { border-color: var(--primary); color: var(--primary); }
+
+.success-msg {
+  display: inline-block;
+  color: #4ade80;
+  font-size: 0.85rem;
+  margin-top: 0.6rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.success-msg.show { opacity: 1; }
