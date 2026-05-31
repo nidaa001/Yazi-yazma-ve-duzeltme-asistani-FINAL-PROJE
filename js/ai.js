@@ -1,4 +1,4 @@
-const AI = (() => {
+piconst AI = (() => {
   const API_KEY_STORAGE = 'wa_gemini_key';
   const MODELS = [
     'gemini-2.5-flash',
