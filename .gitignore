@@ -1,1 +1,16 @@
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
+
+# Veritabanı ve Çevre Dosyaları
+*.db
+.env
+.env.example
+instance/
+migrations/
+
+# Editör Dosyaları
+.vscode/
+.idea/
+.DS_Store
