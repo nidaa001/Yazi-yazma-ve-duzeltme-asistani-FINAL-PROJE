@@ -1,4 +1,7 @@
+
 # ✍️ Yazı Yazma ve Düzeltme Asistanı
+
+[▶️ Proje Tanıtım Videosunu İzlemek İçin Buraya Tıklayın](https://drive.google.com/file/d/1F6LZDNoZpASo3KjdMYzDykEkDzdrUArk/view?usp=sharing)
 
 Bu proje, metinlerinizi yapay zeka gücüyle analiz eden, imla hatalarını düzelten ve profesyonel bir üsluba kavuşturan web tabanlı bir yardımcıdır.
 
