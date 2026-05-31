@@ -1,36 +1,29 @@
-✍️ Yazı Yazma ve Düzeltme Asistanı
-Bu proje, metinlerinizi yapay zeka gücüyle analiz eden, imla hatalarını düzelten ve metinlerinizi profesyonel bir üsluba kavuşturan akıllı bir web uygulamasıdır.
+# ✍️ Yazı Yazma ve Düzeltme Asistanı
 
-🎯 Projenin Amacı
-Günlük yazışmalardan akademik metinlere kadar her türlü içeriği; daha akıcı, dil bilgisi kurallarına uygun ve kurumsal bir tona dönüştürerek, kullanıcının yazım sürecini profesyonelleştirmektir.
+Bu proje, metinlerinizi yapay zeka gücüyle analiz eden, imla hatalarını düzelten ve profesyonel bir üsluba kavuşturan web tabanlı bir yardımcıdır.
 
-✨ Temel Özellikler
-🤖 Yapay Zeka Desteği: Google Gemini API entegrasyonu ile metinleri analiz eder ve iyileştirir.
+## 🎯 Projenin Amacı
+Kullanıcıların yazdığı metinleri, Google Gemini API desteğiyle daha kurumsal, akıcı ve hatasız hale getirmek; metin yazma sürecini hızlandırmak ve kaliteyi artırmaktır.
 
-📝 Profesyonel Üslup Dönüşümü: Metinleri dilediğiniz tonda (resmi, akademik, samimi) yeniden yazar.
+## ✨ Temel Özellikler
+* **🤖 Yapay Zeka Düzeltme:** Gemini 1.5 modeli ile metinlerdeki gramer ve anlatım bozukluklarını anında giderir.
+* **📝 Profesyonel Üslup:** Metinleri resmi, akademik veya günlük dil tonuna dönüştürür.
+* **📊 Analiz Paneli:** Düzeltilen metinlerin geçmişini ve istatistiklerini tutar.
+* **💻 Modern Arayüz:** Kullanıcı dostu, hızlı ve responsive (mobil uyumlu) tasarım.
 
-🔍 Hata Denetimi: Yazım ve noktalama hatalarını otomatik olarak tespit eder.
+## 🛠 Kullanılan Teknolojiler
+* **Backend:** Python, Flask, SQLAlchemy
+* **Yapay Zeka:** Google Generative AI (Gemini API)
+* **Frontend:** HTML5, CSS3, JavaScript
+* **Veritabanı:** SQLite
 
-📊 Analiz Paneli: Kullanıcıların işlem geçmişlerini yönetebildiği modern bir arayüz.
+---
 
-💻 Modern ve Hızlı Tasarım: Kullanıcı odaklı, şık ve mobil uyumlu bir arayüz.
+## 🚀 Manuel Kurulum Adımları
+Projenin bilgisayarınızda çalışması için şu adımları takip edin:
 
-🛠 Kullanılan Teknolojiler
-Backend: Python, Flask
-
-Yapay Zeka: Google Generative AI (Gemini API)
-
-Veritabanı: SQLite
-
-Frontend: HTML5, CSS3, JavaScript
-
-🚀 Kurulum Adımları
-Projeyi bilgisayarınızda çalıştırmak için şu adımları izleyin:
-
-Depoyu İndirin: Projeyi bilgisayarınıza kopyalayın.
-
-Gerekli Kütüphaneleri Yükleyin: Proje klasöründe pip install -r requirements.txt komutunu çalıştırın.
-
-Uygulamayı Başlatın: python run.py komutunu çalıştırın.
-
-Tarayıcıda Görüntüleyin: http://127.0.0.1:5000 adresine gidin.
+1. **Sanal Ortamı Oluşturun:**
+   ```bash
+   cd backend
+   python -m venv venv
+   venv\Scripts\activate
